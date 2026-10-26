@@ -1,45 +1,36 @@
-# 🚀 Smart Contract & Web3 Portfolio
+# 🚀 Advanced DeFi Staking Protocol
 
-Welcome to my Web3 development portfolio. I am a Smart Contract developer specializing in Solidity, Web3.py, and Ethereum blockchain solutions. 
+A professional, production-ready DeFi Staking Smart Contract built with **Solidity** and tested using **Python (Web3.py)**. 
+
+This repository provides a complete, secure, and highly customizable staking solution for Web3 projects. It allows users to stake their ERC-20 tokens and earn continuous rewards based on time.
+
+## ✨ Key Features (Why choose this?)
+
+- **🔒 Security First:** Implements a custom `nonReentrant` modifier to prevent reentrancy attacks, ensuring user funds are always safe.
+- **👑 Owner Controls:** Includes an `onlyOwner` modifier allowing the contract deployer to safely adjust the `rewardRate` without compromising the system.
+- **🛡️ Emergency Withdraw:** Users can safely withdraw their principal tokens at any time without claiming rewards in case of emergencies.
+- **📊 Real-time Earnings:** Includes a view function `earned(address)` to check current pending rewards before withdrawal.
+- **⚙️ Automated Deployment:** Comes with a Python script (`staking_v2.py`) to automatically compile, deploy, and simulate the entire staking lifecycle.
 
 ## 🛠 Tech Stack
-- **Languages:** Solidity, Python
-- **Frameworks/Libraries:** Web3.py, py-solc-x
-- **Blockchain:** Ethereum (Local Ganache & Testnets)
+- **Smart Contracts:** Solidity `^0.8.0`
+- **Blockchain Interaction:** Python, `web3.py`
+- **Compiler:** `py-solc-x`
 
-## 📁 Projects
+## 📦 What's Included in this Package?
+When you purchase this package, you get:
+1. `staking_v2.py`: The complete Python script containing the Solidity code, compiler, deployer, and testing simulation.
+2. `README.md`: Full documentation (this file).
 
-### 1. Advanced ERC-20 Token (HajiCoin)
-A fully functional ERC-20 token built from scratch using Solidity. It includes advanced tokenomics features such as:
-- **Minting:** Owner can create new tokens.
-- **Burning:** Users can burn their tokens to reduce total supply.
-- **Standard Transfers & Balances:** Fully compliant with the ERC-20 standard.
-- **Deployment:** Automated deployment and interaction scripts written in Python using Web3.py.
+## 🚀 How to Run and Test Locally
 
-### 2. Decentralized Voting System
-A secure and transparent voting smart contract. 
-- Prevents double-voting using address mapping.
-- Only the contract owner can add new candidates.
-- Fully tested on simulated EVM.
+Follow these simple steps to test the smart contract on your local machine:
 
-### 3. Simple Storage (Python Integration)
-A foundational smart contract demonstrating the integration of Python with Ethereum. It stores a number on the blockchain and updates it via Python scripts.
+### 1. Prerequisites
+- Python 3.8+ installed.
+- [Ganache](https://trufflesuite.com/ganache/) installed and running on `http://localhost:7545`.
 
-### 4. ERC-721 NFT Collection (Haji Art)
-A complete implementation of the ERC-721 standard for creating Non-Fungible Tokens (NFTs).
-- **Minting:** Allows creating unique NFTs with a specific Token ID.
-- **Metadata (TokenURI):** Attaches a unique URI (like an IPFS link) to each NFT, which points to its image and properties.
-- **Transfer:** Enables the secure transfer of NFTs between wallets, ensuring the ownership and metadata remain intact.
-
-- ### 5. DeFi Staking Protocol
-A complete Decentralized Finance (DeFi) staking smart contract. This project demonstrates how users can lock their tokens to earn rewards over time.
-- **Time-Based Rewards:** Calculates user rewards automatically based on the exact time their tokens are staked using `block.timestamp`.
-- **Secure Approvals:** Uses the `Approve` and `transferFrom` patterns to safely handle user deposits without compromising wallet security.
-- **Automated Withdrawal:** Users can withdraw their principal (staked tokens) and earned rewards seamlessly in a single transaction.
-- **Testing:** Simulated time-travel testing using Python and Ganache to verify accurate reward calculation and smart contract logic.
-
-## 🐍 How to Run Locally
-1. Clone this repository.
-2. Install dependencies: `pip install web3 py-solc-x`
-3. Start a local blockchain (e.g., Ganache).
-4. Run the Python deployment scripts: `python <script_name>.py`
+### 2. Install Dependencies
+Open your terminal and run:
+```bash
+pip install web3 py-solc-x

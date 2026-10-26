@@ -25,6 +25,12 @@ A secure and transparent voting smart contract.
 ### 3. Simple Storage (Python Integration)
 A foundational smart contract demonstrating the integration of Python with Ethereum. It stores a number on the blockchain and updates it via Python scripts.
 
+### 4. ERC-721 NFT Collection (Haji Art)
+A complete implementation of the ERC-721 standard for creating Non-Fungible Tokens (NFTs).
+- **Minting:** Allows creating unique NFTs with a specific Token ID.
+- **Metadata (TokenURI):** Attaches a unique URI (like an IPFS link) to each NFT, which points to its image and properties.
+- **Transfer:** Enables the secure transfer of NFTs between wallets, ensuring the ownership and metadata remain intact.
+
 ## 🐍 How to Run Locally
 1. Clone this repository.
 2. Install dependencies: `pip install web3 py-solc-x`

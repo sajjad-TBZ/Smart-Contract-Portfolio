@@ -31,6 +31,13 @@ A complete implementation of the ERC-721 standard for creating Non-Fungible Toke
 - **Metadata (TokenURI):** Attaches a unique URI (like an IPFS link) to each NFT, which points to its image and properties.
 - **Transfer:** Enables the secure transfer of NFTs between wallets, ensuring the ownership and metadata remain intact.
 
+- ### 5. DeFi Staking Protocol
+A complete Decentralized Finance (DeFi) staking smart contract. This project demonstrates how users can lock their tokens to earn rewards over time.
+- **Time-Based Rewards:** Calculates user rewards automatically based on the exact time their tokens are staked using `block.timestamp`.
+- **Secure Approvals:** Uses the `Approve` and `transferFrom` patterns to safely handle user deposits without compromising wallet security.
+- **Automated Withdrawal:** Users can withdraw their principal (staked tokens) and earned rewards seamlessly in a single transaction.
+- **Testing:** Simulated time-travel testing using Python and Ganache to verify accurate reward calculation and smart contract logic.
+
 ## 🐍 How to Run Locally
 1. Clone this repository.
 2. Install dependencies: `pip install web3 py-solc-x`
